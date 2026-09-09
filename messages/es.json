@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "dashboard": "Panel de Control",
+    "analytics": "Análisis",
+    "users": "Usuarios",
+    "settings": "Configuración"
+  },
+  "footer": {
+    "tagline": "Inteligencia para equipos SaaS modernos.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "copy": "Todos los derechos reservados."
+  },
+  "analytics": {
+    "body": "Monitorea métricas clave e indicadores de rendimiento en tiempo real. Personaliza tu panel para seguir lo que más importa a tu negocio.",
+    "chart1Period": "Últimos 30 días",
+    "chart1Title": "Tendencia de Ingresos",
+    "chart2Title": "Crecimiento de Usuarios",
+    "chart3Period": "Últimos 12 meses",
+    "chart3Title": "Tasa de Conversión",
+    "eyebrow": "Información",
+    "headline": "Tu Rendimiento de un Vistazo"
+  },
+  "cta": {
+    "body": "Comienza a tomar decisiones basadas en datos hoy. Obtén acceso instantáneo a herramientas poderosas de análisis e informes.",
+    "button": "Comenzar Gratis",
+    "footnote": "Sin tarjeta de crédito requerida. Prueba gratuita de 14 días.",
+    "headline": "¿Listo para Crecer?"
+  },
+  "features": {
+    "body": "Herramientas poderosas diseñadas para ayudarte a entender tu negocio, rastrear el progreso y optimizar el rendimiento con confianza.",
+    "eyebrow": "Características",
+    "headline": "Todo lo que Necesitas para Triunfar"
+  },
+  "hero": {
+    "badge": "Nuevo: Información Impulsada por IA",
+    "cta": "Iniciar Prueba Gratuita",
+    "footnote": "Únete a más de 10,000 equipos que ya usan nuestra plataforma.",
+    "headline": "Análisis Hecho",
+    "headlineAccent": "Simple",
+    "secondaryCta": "Ver Demo",
+    "subheadline": "Visualiza tus datos, entiende a tus usuarios y crece más rápido con nuestro panel de análisis intuitivo."
+  },
+  "logos": {
+    "label": "Confiado por empresas líderes"
+  },
+  "pricing": {
+    "body": "Elige el plan que se adapte a tus necesidades. Escala según creces, con precios transparentes y sin cargos ocultos.",
+    "eyebrow": "Precios",
+    "headline": "Planes para Cada Etapa",
+    "popular": "Más Popular"
+  },
+  "settings": {
+    "appearance": {
+      "accentColor": "Color de Acento",
+      "accentHint": "Personaliza el tema de tu panel con el color de tu marca.",
+      "density": "Densidad de Visualización",
+      "themeMode": "Tema"
+    },
+    "billing": {
+      "cancel": "Cancelar Plan",
+      "colAmount": "Cantidad",
+      "colDate": "Fecha",
+      "colInvoice": "Factura",
+      "colPlan": "Plan",
+      "colStatus": "Estado",
+      "currentPlan": "Plan Actual",
+      "exportAll": "Exportar Todo",
+      "invoiceHistory": "Historial de Facturas",
+      "perMonth": "por mes",
+      "planDesc": "Facturado anualmente. Cancela en cualquier momento.",
+      "planName": "Professional",
+      "upgrade": "Actualizar Plan",
+      "usageTitle": "Uso y Límites"
+    },
+    "heading": "Configuración",
+    "profile": {
+      "avatarHint": "JPG, PNG o GIF. Máximo 2MB.",
+      "avatarSection": "Foto de Perfil",
+      "cancel": "Cancelar",
+      "company": "Empresa",
+      "dangerHint": "Esta acción no se puede deshacer.",
+      "dangerZone": "Zona de Peligro",
+      "deleteAccount": "Eliminar Cuenta",
+      "email": "Correo Electrónico",
+      "fullName": "Nombre Completo",
+      "personalInfo": "Información Personal",
+      "role": "Rol",
+      "saveChanges": "Guardar Cambios",
+      "saved": "Cambios guardados",
+      "uploadPhoto": "Subir Foto"
+    },
+    "subheading": "Administra la configuración y preferencias de tu cuenta"
+  },
+  "signIn": {
+    "demo": {
+      "body": "Explora nuestro panel de análisis con datos de ejemplo. No se requiere tarjeta de crédito.",
+      "title": "Probar Demo"
+    },
+    "form": {
+      "demoButton": "Ver Demo",
+      "emailLabel": "Dirección de Correo Electrónico",
+      "emailPlaceholder": "tu@empresa.com",
+      "errorEmpty": "Este campo es obligatorio",
+      "forgotPassword": "¿Olvidaste tu contraseña?",
+      "heading": "Bienvenido de Vuelta",
+      "hidePassword": "Ocultar",
+      "legal": "Al iniciar sesión, aceptas nuestros Términos de Servicio y Política de Privacidad.",
+      "noAccount": "¿No tienes cuenta?",
+      "orDivider": "o",
+      "passwordLabel": "Contraseña",
+      "passwordPlaceholder": "Ingresa tu contraseña",
+      "showPassword": "Mostrar",
+      "signUpLink": "Registrarse",
+      "signingIn": "Iniciando sesión…",
+      "subheading": "Accede a tu panel de análisis",
+      "submitButton": "Iniciar Sesión"
+    },
+    "promo": {
+      "eyebrow": "Información en tiempo real",
+      "headline": "Monitorea lo que más importa",
+      "subtext": "Supervisa tus métricas clave y toma decisiones basadas en datos al instante."
+    },
+    "stats": {
+      "companies": "Empresas",
+      "tracked": "Eventos Rastreados",
+      "uptime": "Disponibilidad"
+    },
+    "testimonial": {
+      "author": "Sarah Chen",
+      "quote": "Este panel transformó cómo entendemos el comportamiento de nuestros usuarios. Los insights son invaluables.",
+      "role": "Gerente de Producto, TechCorp"
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Confiado por equipos",
+    "headline": "Amado por nuestros clientes"
+  }
+}

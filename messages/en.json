@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "analytics": "Analytics",
+    "users": "Users",
+    "settings": "Settings"
+  },
+  "footer": {
+    "tagline": "Intelligence for modern SaaS teams.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copy": "All rights reserved."
+  },
+  "analytics": {
+    "body": "Track key metrics and performance indicators in real-time. Customize your dashboard to monitor what matters most to your business.",
+    "chart1Period": "Last 30 days",
+    "chart1Title": "Revenue Trend",
+    "chart2Title": "User Growth",
+    "chart3Period": "Last 12 months",
+    "chart3Title": "Conversion Rate",
+    "eyebrow": "Insights",
+    "headline": "Your Performance at a Glance"
+  },
+  "cta": {
+    "body": "Start making data-driven decisions today. Get instant access to powerful analytics and reporting tools.",
+    "button": "Get Started Free",
+    "footnote": "No credit card required. 14-day free trial.",
+    "headline": "Ready to Grow?"
+  },
+  "features": {
+    "body": "Powerful tools designed to help you understand your business, track progress, and optimize performance with confidence.",
+    "eyebrow": "Features",
+    "headline": "Everything You Need to Succeed"
+  },
+  "hero": {
+    "badge": "New: AI-Powered Insights",
+    "cta": "Start Free Trial",
+    "footnote": "Join 10,000+ teams already using our platform.",
+    "headline": "Analytics Made",
+    "headlineAccent": "Simple",
+    "secondaryCta": "Watch Demo",
+    "subheadline": "Visualize your data, understand your users, and grow faster with our intuitive analytics dashboard."
+  },
+  "logos": {
+    "label": "Trusted by leading companies"
+  },
+  "pricing": {
+    "body": "Choose the plan that fits your needs. Scale as you grow, with transparent pricing and no hidden fees.",
+    "eyebrow": "Pricing",
+    "headline": "Plans for Every Stage",
+    "popular": "Most Popular"
+  },
+  "settings": {
+    "appearance": {
+      "accentColor": "Accent Color",
+      "accentHint": "Customize your dashboard theme with your brand color.",
+      "density": "Display Density",
+      "themeMode": "Theme"
+    },
+    "billing": {
+      "cancel": "Cancel Plan",
+      "colAmount": "Amount",
+      "colDate": "Date",
+      "colInvoice": "Invoice",
+      "colPlan": "Plan",
+      "colStatus": "Status",
+      "currentPlan": "Current Plan",
+      "exportAll": "Export All",
+      "invoiceHistory": "Invoice History",
+      "perMonth": "per month",
+      "planDesc": "Billed annually. Cancel anytime.",
+      "planName": "Professional",
+      "upgrade": "Upgrade Plan",
+      "usageTitle": "Usage & Limits"
+    },
+    "heading": "Settings",
+    "profile": {
+      "avatarHint": "JPG, PNG or GIF. Max 2MB.",
+      "avatarSection": "Profile Picture",
+      "cancel": "Cancel",
+      "company": "Company",
+      "dangerHint": "This action cannot be undone.",
+      "dangerZone": "Danger Zone",
+      "deleteAccount": "Delete Account",
+      "email": "Email",
+      "fullName": "Full Name",
+      "personalInfo": "Personal Information",
+      "role": "Role",
+      "saveChanges": "Save Changes",
+      "saved": "Changes saved",
+      "uploadPhoto": "Upload Photo"
+    },
+    "subheading": "Manage your account settings and preferences"
+  },
+  "signIn": {
+    "demo": {
+      "body": "Explore our analytics dashboard with sample data. No credit card required.",
+      "title": "Try Demo"
+    },
+    "form": {
+      "demoButton": "View Demo",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "you@company.com",
+      "errorEmpty": "This field is required",
+      "forgotPassword": "Forgot password?",
+      "heading": "Welcome Back",
+      "hidePassword": "Hide",
+      "legal": "By signing in, you agree to our Terms of Service and Privacy Policy.",
+      "noAccount": "Don't have an account?",
+      "orDivider": "or",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "showPassword": "Show",
+      "signUpLink": "Sign up",
+      "signingIn": "Signing in…",
+      "subheading": "Access your analytics dashboard",
+      "submitButton": "Sign In"
+    },
+    "promo": {
+      "eyebrow": "Real-time insights",
+      "headline": "Track what matters most",
+      "subtext": "Monitor your key metrics and make data-driven decisions instantly."
+    },
+    "stats": {
+      "companies": "Companies",
+      "tracked": "Events Tracked",
+      "uptime": "Uptime"
+    },
+    "testimonial": {
+      "author": "Sarah Chen",
+      "quote": "This dashboard transformed how we understand our user behavior. The insights are invaluable.",
+      "role": "Product Manager, TechCorp"
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Trusted by teams",
+    "headline": "Loved by our customers"
+  }
+}
