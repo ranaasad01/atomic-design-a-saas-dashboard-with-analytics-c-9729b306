@@ -280,7 +280,8 @@ export default function HomePage() {
                 <span
                   className="block text-indigo-400"
                   style={{
-                    color: "#22c55e"
+                    color: "#22c55e",
+                    backgroundColor: "#ffffff"
                   }}>{t("hero.headlineAccent")}</span>
               </motion.h1>
               <motion.p variants={fadeInUp} className="max-w-lg text-pretty text-lg leading-relaxed text-[hsl(var(--muted-foreground))]">
