@@ -212,12 +212,7 @@ const heroChartVariants: Variants = {
 
 function HeroDashboardPreview() {
   return (
-    <motion.div
-      variants={heroChartVariants}
-      initial="hidden"
-      animate="visible"
-      className="relative w-full rounded-2xl border border-white/10 bg-[hsl(var(--card))] p-5 shadow-[0_8px_48px_-8px_rgba(99,102,241,0.25)]"
-    >
+    <motion.div variants={heroChartVariants} initial="hidden" animate="visible" className="relative w-full rounded-2xl border border-white/10 bg-[hsl(var(--card))] p-5 shadow-[0_8px_48px_-8px_rgba(99,102,241,0.25)]">
       {/* Top bar */}
       <div className="mb-4 flex items-center justify-between">
         <span className="text-xs font-semibold uppercase tracking-widest text-[hsl(var(--muted-foreground))]">
@@ -244,23 +239,16 @@ function HeroDashboardPreview() {
       </ResponsiveContainer>
       {/* Stat pills */}
       <div className="mt-4 grid grid-cols-3 gap-3">
-        {HERO_STATS.map((s) => (
-          <div
-            key={s.label}
-            className="rounded-xl border border-white/8 bg-white/4 px-3 py-2.5"
-          >
-            <div className="flex items-center gap-1">
-              <span className="text-base font-bold text-[hsl(var(--foreground))]">{s.value}</span>
-              <span
-                className={`flex items-center gap-0.5 text-xs font-semibold ${s.up ? "text-emerald-400" : "text-rose-400"}`}
-              >
-                {s.up ? <ArrowUp size={10} /> : <ArrowDown size={10} />}
-                {s.delta}
-              </span>
-            </div>
-            <p className="mt-0.5 text-[10px] text-[hsl(var(--muted-foreground))]">{s.label}</p>
+        {HERO_STATS.map((s) => (<div key={s.label} className="rounded-xl border border-white/8 bg-white/4 px-3 py-2.5">
+          <div className="flex items-center gap-1">
+            <span className="text-base font-bold text-[hsl(var(--foreground))]">{s.value}</span>
+            <span className={`flex items-center gap-0.5 text-xs font-semibold ${s.up ? "text-emerald-400" : "text-rose-400"}`}>
+              {s.up ? <ArrowUp size={10} /> : <ArrowDown size={10} />}
+              {s.delta}
+            </span>
           </div>
-        ))}
+          <p className="mt-0.5 text-[10px] text-[hsl(var(--muted-foreground))]">{s.label}</p>
+        </div>))}
       </div>
     </motion.div>
   );
@@ -274,55 +262,36 @@ export default function HomePage() {
   return (
     <main className="flex flex-col">
       {/* ── Hero ── */}
-      <section
-        id="hero"
-        className="relative overflow-hidden bg-[hsl(var(--background))] px-6 pb-24 pt-20 md:pb-32 md:pt-28"
-      >
+      <section id="hero" className="relative overflow-hidden bg-[hsl(var(--background))] px-6 pb-24 pt-20 md:pb-32 md:pt-28">
         {/* Glow */}
-        <div
-          aria-hidden
-          className="pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 h-[520px] w-[900px] rounded-full bg-indigo-600/10 blur-[120px]"
-        />
+        <div aria-hidden className="pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 h-[520px] w-[900px] rounded-full bg-indigo-600/10 blur-[120px]" />
         <div className="relative mx-auto grid max-w-6xl grid-cols-1 items-center gap-14 lg:grid-cols-2">
           {/* Left copy */}
           <Reveal>
-            <motion.div
-              variants={staggerContainer}
-              initial="hidden"
-              animate="visible"
-              className="flex flex-col gap-6"
-            >
+            <motion.div variants={staggerContainer} initial="hidden" animate="visible" className="flex flex-col gap-6">
               <motion.div variants={fadeInUp}>
                 <span className="inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-indigo-400">
                   <Zap size={12} />
                   {t("hero.badge")}
                 </span>
               </motion.div>
-              <motion.h1
-                variants={fadeInUp}
-                className="text-balance text-4xl font-extrabold leading-tight tracking-tight text-[hsl(var(--foreground))] md:text-5xl lg:text-6xl"
-              >
+              <motion.h1 variants={fadeInUp} className="text-balance text-4xl font-extrabold leading-tight tracking-tight text-[hsl(var(--foreground))] md:text-5xl lg:text-6xl">
                 {t("hero.headline")}
-                <span className="block text-indigo-400">{t("hero.headlineAccent")}</span>
+                <span
+                  className="block text-indigo-400"
+                  style={{
+                    color: "#22c55e"
+                  }}>{t("hero.headlineAccent")}</span>
               </motion.h1>
-              <motion.p
-                variants={fadeInUp}
-                className="max-w-lg text-pretty text-lg leading-relaxed text-[hsl(var(--muted-foreground))]"
-              >
+              <motion.p variants={fadeInUp} className="max-w-lg text-pretty text-lg leading-relaxed text-[hsl(var(--muted-foreground))]">
                 {t("hero.subheadline")}
               </motion.p>
               <motion.div variants={fadeInUp} className="flex flex-wrap gap-3">
-                <Link
-                  href="/dashboard"
-                  className="group inline-flex items-center gap-2 rounded-full bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-[0_0_24px_rgba(99,102,241,0.4)] transition-all duration-300 hover:bg-indigo-500 hover:shadow-[0_0_32px_rgba(99,102,241,0.55)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400"
-                >
+                <Link href="/dashboard" className="group inline-flex items-center gap-2 rounded-full bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-[0_0_24px_rgba(99,102,241,0.4)] transition-all duration-300 hover:bg-indigo-500 hover:shadow-[0_0_32px_rgba(99,102,241,0.55)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400">
                   {t("hero.cta")}
                   <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
-                <Link
-                  href="/analytics"
-                  className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-[hsl(var(--foreground))] transition-all duration-300 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400"
-                >
+                <Link href="/analytics" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-[hsl(var(--foreground))] transition-all duration-300 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400">
                   {t("hero.secondaryCta")}
                 </Link>
               </motion.div>
@@ -337,12 +306,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* ── Logos / social proof strip ── */}
-      <section
-        id="social-proof"
-        className="border-y border-white/6 bg-white/2 px-6 py-10"
-      >
+      <section id="social-proof" className="border-y border-white/6 bg-white/2 px-6 py-10">
         <Reveal>
           <p className="mb-8 text-center text-xs font-semibold uppercase tracking-widest text-[hsl(var(--muted-foreground))]">
             {t("logos.label")}
@@ -350,10 +315,7 @@ export default function HomePage() {
           <div className="mx-auto flex max-w-4xl flex-wrap items-center justify-center gap-x-12 gap-y-4">
             {(Array.isArray(t.raw("logos.names")) ? t.raw("logos.names") : []).map(
               (name: string, i: number) => (
-                <span
-                  key={i}
-                  className="text-sm font-bold tracking-tight text-[hsl(var(--muted-foreground))] opacity-60 transition-opacity hover:opacity-100"
-                >
+                <span key={i} className="text-sm font-bold tracking-tight text-[hsl(var(--muted-foreground))] opacity-60 transition-opacity hover:opacity-100">
                   {name}
                 </span>
               )
@@ -361,12 +323,8 @@ export default function HomePage() {
           </div>
         </Reveal>
       </section>
-
       {/* ── Analytics preview section ── */}
-      <section
-        id="analytics"
-        className="bg-[hsl(var(--background))] px-6 py-24 md:py-32"
-      >
+      <section id="analytics" className="bg-[hsl(var(--background))] px-6 py-24 md:py-32">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <div className="mb-14 max-w-2xl">
@@ -454,10 +412,7 @@ export default function HomePage() {
                   {CHANNEL_DATA.map((c, i) => (
                     <div key={c.name} className="flex items-center justify-between text-xs">
                       <div className="flex items-center gap-2">
-                        <span
-                          className="h-2 w-2 rounded-full"
-                          style={{ background: CHANNEL_COLORS[i % CHANNEL_COLORS.length] }}
-                        />
+                        <span className="h-2 w-2 rounded-full" style={{ background: CHANNEL_COLORS[i % CHANNEL_COLORS.length] }} />
                         <span className="text-[hsl(var(--muted-foreground))]">{c.name}</span>
                       </div>
                       <span className="font-semibold text-[hsl(var(--foreground))]">{c.value}%</span>
@@ -500,12 +455,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* ── Features ── */}
-      <section
-        id="features"
-        className="bg-white/2 px-6 py-24 md:py-32"
-      >
+      <section id="features" className="bg-white/2 px-6 py-24 md:py-32">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <div className="mb-14 text-center">
@@ -521,22 +472,11 @@ export default function HomePage() {
             </div>
           </Reveal>
 
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3"
-          >
+          <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {FEATURES.map((f, i) => {
               const Icon = f.icon;
               return (
-                <motion.div
-                  key={f.title}
-                  variants={scaleIn}
-                  whileHover={{ y: -4, transition: { duration: 0.2 } }}
-                  className="group rounded-2xl border border-white/8 bg-[hsl(var(--card))] p-6 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_-8px_rgba(0,0,0,0.2)] transition-shadow duration-300 hover:shadow-[0_4px_32px_-4px_rgba(99,102,241,0.2)]"
-                >
+                <motion.div key={f.title} variants={scaleIn} whileHover={{ y: -4, transition: { duration: 0.2 } }} className="group rounded-2xl border border-white/8 bg-[hsl(var(--card))] p-6 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_-8px_rgba(0,0,0,0.2)] transition-shadow duration-300 hover:shadow-[0_4px_32px_-4px_rgba(99,102,241,0.2)]">
                   <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-500/15 text-indigo-400 transition-colors duration-300 group-hover:bg-indigo-500/25">
                     <Icon size={20} />
                   </div>
@@ -548,12 +488,8 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
-
       {/* ── Testimonials ── */}
-      <section
-        id="testimonials"
-        className="bg-[hsl(var(--background))] px-6 py-24 md:py-32"
-      >
+      <section id="testimonials" className="bg-[hsl(var(--background))] px-6 py-24 md:py-32">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <div className="mb-14 text-center">
@@ -569,10 +505,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             {TESTIMONIALS.map((t_, i) => (
               <Reveal key={t_.name} delay={i * 0.1}>
-                <motion.div
-                  whileHover={{ y: -4, transition: { duration: 0.2 } }}
-                  className="flex h-full flex-col rounded-2xl border border-white/8 bg-[hsl(var(--card))] p-6 shadow-[0_2px_24px_-4px_rgba(0,0,0,0.25)]"
-                >
+                <motion.div whileHover={{ y: -4, transition: { duration: 0.2 } }} className="flex h-full flex-col rounded-2xl border border-white/8 bg-[hsl(var(--card))] p-6 shadow-[0_2px_24px_-4px_rgba(0,0,0,0.25)]">
                   <div className="mb-4 flex gap-0.5">
                     {Array.from({ length: t_.stars }).map((_, si) => (
                       <Star key={si} size={14} className="fill-amber-400 text-amber-400" />
@@ -589,8 +522,7 @@ export default function HomePage() {
                       onError={(e) => {
                         (e.currentTarget as HTMLImageElement).src =
                           `https://ui-avatars.com/api/?name=${encodeURIComponent(t_.name)}&background=6366f1&color=fff&size=64`;
-                      }}
-                    />
+                      }} />
                     <div>
                       <p className="text-sm font-semibold text-[hsl(var(--foreground))]">{t_.name}</p>
                       <p className="text-xs text-[hsl(var(--muted-foreground))]">{t_.role}</p>
@@ -602,12 +534,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* ── Pricing ── */}
-      <section
-        id="pricing"
-        className="bg-white/2 px-6 py-24 md:py-32"
-      >
+      <section id="pricing" className="bg-white/2 px-6 py-24 md:py-32">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <div className="mb-14 text-center">
@@ -632,8 +560,7 @@ export default function HomePage() {
                     plan.highlight
                       ? "border-indigo-500/50 bg-indigo-600/10 shadow-[0_4px_40px_-4px_rgba(99,102,241,0.3)]"
                       : "border-white/8 bg-[hsl(var(--card))]"
-                  }`}
-                >
+                  }`}>
                   {plan.highlight && (
                     <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-indigo-600 px-4 py-1 text-xs font-bold text-white shadow-lg">
                       {t("pricing.popular")}
@@ -652,12 +579,10 @@ export default function HomePage() {
                     <p className="mt-2 text-sm text-[hsl(var(--muted-foreground))]">{plan.desc}</p>
                   </div>
                   <ul className="mb-7 flex-1 space-y-2.5">
-                    {plan.features.map((feat) => (
-                      <li key={feat} className="flex items-start gap-2.5 text-sm text-[hsl(var(--foreground))]">
-                        <Check size={15} className="mt-0.5 shrink-0 text-indigo-400" />
-                        {feat}
-                      </li>
-                    ))}
+                    {plan.features.map((feat) => (<li key={feat} className="flex items-start gap-2.5 text-sm text-[hsl(var(--foreground))]">
+                      <Check size={15} className="mt-0.5 shrink-0 text-indigo-400" />
+                      {feat}
+                    </li>))}
                   </ul>
                   <Link
                     href="/dashboard"
@@ -665,8 +590,7 @@ export default function HomePage() {
                       plan.highlight
                         ? "bg-indigo-600 text-white shadow-[0_0_20px_rgba(99,102,241,0.4)] hover:bg-indigo-500"
                         : "border border-white/10 bg-white/5 text-[hsl(var(--foreground))] hover:bg-white/10"
-                    }`}
-                  >
+                    }`}>
                     {plan.cta}
                   </Link>
                 </motion.div>
@@ -675,16 +599,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* ── CTA ── */}
-      <section
-        id="cta"
-        className="relative overflow-hidden bg-[hsl(var(--background))] px-6 py-24 md:py-32"
-      >
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 flex items-center justify-center"
-        >
+      <section id="cta" className="relative overflow-hidden bg-[hsl(var(--background))] px-6 py-24 md:py-32">
+        <div aria-hidden className="pointer-events-none absolute inset-0 flex items-center justify-center">
           <div className="h-[400px] w-[700px] rounded-full bg-indigo-600/12 blur-[100px]" />
         </div>
         <Reveal>
@@ -696,10 +613,7 @@ export default function HomePage() {
               {t("cta.body")}
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-              <Link
-                href="/dashboard"
-                className="group inline-flex items-center gap-2 rounded-full bg-indigo-600 px-8 py-3.5 text-sm font-semibold text-white shadow-[0_0_28px_rgba(99,102,241,0.45)] transition-all duration-300 hover:bg-indigo-500 hover:shadow-[0_0_40px_rgba(99,102,241,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400"
-              >
+              <Link href="/dashboard" className="group inline-flex items-center gap-2 rounded-full bg-indigo-600 px-8 py-3.5 text-sm font-semibold text-white shadow-[0_0_28px_rgba(99,102,241,0.45)] transition-all duration-300 hover:bg-indigo-500 hover:shadow-[0_0_40px_rgba(99,102,241,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400">
                 {t("cta.button")}
                 <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
